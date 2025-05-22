@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Login V18</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" th:href="@{/images/icons/favicon.ico}"/>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" th:href="@{/vendor/bootstrap/css/bootstrap.min.css}">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" th:href="@{/fonts/font-awesome-4.7.0/css/font-awesome.min.css}">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" th:href="@{/fonts/Linearicons-Free-v1.0.0/icon-font.min.css}">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" th:href="@{/vendor/animate/animate.css}">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" th:href="@{/vendor/css-hamburgers/hamburgers.min.css}">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" th:href="@{/vendor/animsition/css/animsition.min.css}">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" th:href="@{/vendor/select2/select2.min.css}">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" th:href="@{/vendor/daterangepicker/daterangepicker.css}">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" th:href="@{/css/util.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/main.css}">
+    <!--===============================================================================================-->
+</head>
+<body style="background-color: #666666;">
+
+<div class="limiter">
+    <div class="container-login100">
+        <div class="wrap-login100">
+            <form class="login100-form validate-form" action="/reset" method="post" th:object="${reset}" onsubmit="return validatePassword()">
+					<span class="login100-form-title p-b-43">
+						Let's reset your password
+					</span>
+
+
+                <div class="wrap-input100 validate-input" data-validate="Password is required" id="currentPassword">
+                    <input class="input100" type="password" name="pass" th:field="*{currentpassword}">
+                    <span class="focus-input100"></span>
+                    <span class="label-input100">Current Password</span>
+                </div>
+
+
+                <div class="wrap-input100 validate-input" data-validate="Password is required" id="password">
+                    <input class="input100" type="password" name="cpass" th:field="*{newpassword}">
+                    <span class="focus-input100"></span>
+                    <span class="label-input100">New Password</span>
+                </div>
+
+                <div class="wrap-input100 validate-input" data-validate="Password is required" id="confirmPassword">
+                    <input class="input100" type="password" name="cpass" th:field="*{confirmpassword}">
+                    <span class="focus-input100"></span>
+                    <span class="label-input100">Confirm Password</span>
+                </div>
+
+                <div id="passwordError" class="error-message"></div>
+
+
+                <div class="container-login100-form-btn">
+                    <button class="login100-form-btn" type="submit">
+                        Reset
+                    </button>
+                </div>
+
+            </form>
+
+            <div class="login100-more" style="background-image: url('/images/bg-01.jpg');">
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!--===============================================================================================-->
+    <script type="text/javascript" th:src="@{/vendor/jquery/jquery-3.2.1.min.js}"></script>
+    <!--===============================================================================================-->
+    <script type="text/javascript" th:src="@{/vendor/animsition/js/animsition.min.js}"></script>
+    <!--===============================================================================================-->
+    <script type="text/javascript" th:src="@{/vendor/bootstrap/js/popper.js}"></script>
+    <script type="text/javascript" th:src="@{/vendor/bootstrap/js/bootstrap.min.js}"></script>
+    <!--===============================================================================================-->
+    <script type="text/javascript" th:src="@{/vendor/select2/select2.min.js}"></script>
+    <!--===============================================================================================-->
+    <script type="text/javascript" th:src="@{/vendor/daterangepicker/moment.min.js}"></script>
+    <script type="text/javascript" th:src="@{/vendor/daterangepicker/daterangepicker.js}"></script>
+    <!--===============================================================================================-->
+    <script type="text/javascript" th:src="@{/vendor/countdowntime/countdowntime.js}"></script>
+    <!--===============================================================================================-->
+    <script type="text/javascript" th:src="@{/js/main.js}"></script>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+[
+  {
+    "user": "Mayank",
+    "email": "mayankdembla62@gmail.com",
+    "shippingaddress": "1212 Willow ln, OverlandPark, Kansas",
+    "items": [
+      {
+        "name": "Shirt",
+        "description": "Cotton T-Shirt Black",
+        "image": "https://navigatorsappprofilepictures.s3.us-east-2.amazonaws.com/t-shirt.jpeg",
+        "price": "$ 44.00"
+      },
+      {
+        "name": "Glasses",
+        "description": "Sun glasses",
+        "image": "https://navigatorsappprofilepictures.s3.us-east-2.amazonaws.com/glasses.jpeg",
+        "price": "$ 30.00"
+      },
+      {
+        "name": "Shoes",
+        "description": "Snow Boots",
+        "image": "https://navigatorsappprofilepictures.s3.us-east-2.amazonaws.com/boots.jpeg",
+        "price": "$ 120.00"
+      }
+    ]
+  }
+]
