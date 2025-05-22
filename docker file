@@ -1,0 +1,4 @@
+FROM openjdk:8
+EXPOSE 8080
+ADD target/NavigatorsApplication.jar NavigatorsApplication.jar
+ENTRYPOINT ["java","-jar","/NavigatorsApplication.jar"]
